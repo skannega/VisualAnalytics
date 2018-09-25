@@ -1,0 +1,19 @@
+{
+  "data": {"url": "https://raw.githubusercontent.com/skannega/VisualAnalytics/master/losses2015_transformed.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "name":"Amount",
+      "aggregate": "sum",
+      "field": "Amount",
+      "type": "quantitative"
+      },
+    "y": {
+      "bin":"true",
+      
+      "field": "Damage_Descp",
+      "type": "nominal",
+      "sort": {"field": "Amount",         "order":"ascending","op": "sum" }
+    }
+  }
+}
