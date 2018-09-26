@@ -3,17 +3,14 @@
   "mark": "bar",
   "encoding": {
     "x": {
-      "name":"Amount",
-      "aggregate": "sum",
       "field": "Amount",
-      "type": "quantitative"
+      "type": "quantitative",
+      "aggregate" : "sum"
       },
     "y": {
-      "bin":"true",
-      
       "field": "Damage_Descp",
       "type": "nominal",
-      "sort": {"field": "Amount",         "order":"ascending","op": "sum" }
+      "sort": {"field": "Amount","order":"ascending","op": "sum" }
     }
   }
 }
